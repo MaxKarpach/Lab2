@@ -23,6 +23,8 @@ for k in range(total-1):
             result = "no"
             break
       else: result = "yes"
-
+r = open("output.txt", "w")
+r.write(result)
+r.close()
 print("Result: %s. \n"
       "Time spend: %s seconds." % (result, time.perf_counter()-t_start))

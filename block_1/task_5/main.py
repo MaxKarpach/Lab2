@@ -14,6 +14,9 @@ for i in range(len(numbers)):
         if counter > index_hirsha:
             index_hirsha += 1
             break
+r = open("output.txt", "w")
+r.write(str(index_hirsha))
+r.close()
 
 print("Index Hirsha: %s. \n"
       "Time spend: %s seconds." % (index_hirsha, time.perf_counter()-t_start))
