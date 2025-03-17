@@ -14,7 +14,7 @@ n = open("input.txt").readline()
 f = open('input.txt').readlines()[1:]
 words = []
 for i in range(len(f)):
-    if (isRightString(f[i][:-1])):
+    if (isRightString(f[i][0:])):
         words.append('YES')
     else:
         words.append('NO')
